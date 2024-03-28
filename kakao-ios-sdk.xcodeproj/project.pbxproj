@@ -71,8 +71,6 @@
 		5CDCF97D2BB5043C0067CB30 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF9752BB5043C0067CB30 /* UserApi.swift */; };
 		5CDCF97E2BB5043C0067CB30 /* UserApi+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF9762BB5043C0067CB30 /* UserApi+Internal.swift */; };
 		5CDCF97F2BB5043C0067CB30 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF9772BB5043C0067CB30 /* README.md */; };
-		5CDCF9822BB504500067CB30 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF9802BB504470067CB30 /* Alamofire.xcframework */; };
-		5CDCF9832BB504500067CB30 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF9802BB504470067CB30 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CDCF9852BB504650067CB30 /* KakaoSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF8B62BB5023C0067CB30 /* KakaoSDKCommon.framework */; platformFilter = ios; };
 		5CDCF9862BB504650067CB30 /* KakaoSDKCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF8B62BB5023C0067CB30 /* KakaoSDKCommon.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CDCF98A2BB504780067CB30 /* KakaoSDKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF8FD2BB5033E0067CB30 /* KakaoSDKAuth.framework */; };
@@ -87,6 +85,8 @@
 		5CDCF99D2BB5049A0067CB30 /* KakaoSDKTemplate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF9212BB503770067CB30 /* KakaoSDKTemplate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CDCF9A12BB504A30067CB30 /* KakaoSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF8B62BB5023C0067CB30 /* KakaoSDKCommon.framework */; platformFilter = ios; };
 		5CDCF9A22BB504A30067CB30 /* KakaoSDKCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF8B62BB5023C0067CB30 /* KakaoSDKCommon.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5CDCF9A72BB5074D0067CB30 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF9A62BB5074D0067CB30 /* Alamofire.xcframework */; };
+		5CDCF9A82BB5074D0067CB30 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDCF9A62BB5074D0067CB30 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,7 +148,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5CDCF9832BB504500067CB30 /* Alamofire.xcframework in Embed Frameworks */,
+				5CDCF9A82BB5074D0067CB30 /* Alamofire.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +284,7 @@
 		5CDCF9752BB5043C0067CB30 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		5CDCF9762BB5043C0067CB30 /* UserApi+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserApi+Internal.swift"; sourceTree = "<group>"; };
 		5CDCF9772BB5043C0067CB30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5CDCF9802BB504470067CB30 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Alamofire.xcframework; sourceTree = "<group>"; };
+		5CDCF9A62BB5074D0067CB30 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,7 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDCF9822BB504500067CB30 /* Alamofire.xcframework in Frameworks */,
+				5CDCF9A72BB5074D0067CB30 /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				5CDCF7E02BB5021F0067CB30 /* kakao_ios_sdk.h */,
-				5CDCF9802BB504470067CB30 /* Alamofire.xcframework */,
 				5CDCF8B72BB5023C0067CB30 /* KakaoSDKCommon */,
 				5CDCF8FE2BB5033E0067CB30 /* KakaoSDKAuth */,
 				5CDCF90A2BB5035D0067CB30 /* KakaoSDKShare */,
@@ -567,6 +566,7 @@
 		5CDCF9812BB504500067CB30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF9A62BB5074D0067CB30 /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
